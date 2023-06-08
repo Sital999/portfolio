@@ -2,8 +2,8 @@ import React from "react";
 
 const Resume = () => {
   return (
-    <div className=" lg:px-80 lg:py-4 bg-cyan-800 md:p-10">
-      <div className="bg-teal-800 px-10 rounded-md leading-">
+    <div className=" lg:px-80 lg:py-4 bg-white md:p-10">
+      <div className="bg-gray-900 px-10 rounded-md leading-normal text-white">
         <h1 className="text-center text-4xl text-gray-300 mb-10 pt-4">
           Sital Nagarkoti | Resume
         </h1>
@@ -17,8 +17,6 @@ const Resume = () => {
           <strong>College:</strong>&nbsp; Pulchowk Campus, IOE <br />
           <strong>Undergraduate:</strong>&nbsp; Bachelor in Computer Engineering
           (BCT)
-          <br />
-          <strong>Year:</strong>&nbsp; Fourth Year, Seventh Semester
         </p>
         <p className=" text-md text-gray-300 pt-4">
           <strong>Address:</strong>
@@ -45,19 +43,19 @@ const Resume = () => {
         </strong>
         <ul className=" text-md px-10 text-gray-300 mb-4 pt-4 leading-7">
           <li>
-            <p>Programming Languages: Python, Javascript, C++, C</p>
+            <p>Programming Languages: Python, Javascript, C++, C , Typescript</p>
           </li>
           <li>
             <p>Web Development</p>
             <ul className=" text-md text-gray-300 mb-4 pt-4 px-20">
               <li>
-                Front End: HTML5, CSS3, JavaScript, React, Redux <br />
+                Front End: HTML5, CSS3, JavaScript, React, Redux , Next.js <br />
               </li>
               <li>
-                Backend: Django, Node (Express)
+                Backend: Django, FastApi, Node (Express)
                 <br />
               </li>
-              <li>Database: SQLite3</li>
+              <li>Database: SQLite3 , SQL , Mongo</li>
             </ul>
           </li>
 
@@ -65,7 +63,7 @@ const Resume = () => {
             <p>App Developmentx: Flutter and Dart.</p>
           </li>
           <li>
-            <p>Others:LaTex, Git.</p>
+            <p>Others:LaTex, Git, Docker .</p>
           </li>
         </ul>
         <strong>
@@ -94,22 +92,40 @@ const Resume = () => {
         <ul className=" text-lg text-gray-300 mb-4 pt-4 px-10">
           <li>
             <p>
+              <a href="https://github.com/Sital999/ioe_app">ShihsuCare</a>
+            </p>
+            <ul className=" text-md text-gray-300 mb-4 pt-4 pl-20">
+              <li>Web platform for childrens where they are diagnosed with th help of Community Health Workers and Doctors remotely.</li>
+              <li>Developed using Node.js, Next.js, Redux , MaterialUI</li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              <a href="https://github.com/Sital999/ioe_app">BookChowk</a>
+            </p>
+            <ul className=" text-md text-gray-300 mb-4 pt-4 pl-20">
+              <li>Bookchowk is an online platform that provides book lovers with a vibrant community and a wide range of resources, allowing them to discover, discuss, and delve into their favorite books.</li>
+              <li>Developed using Node.js, React, Redux , TailwindCSS</li>
+            </ul>
+          </li>
+          <li>
+            <p>
               <a href="https://github.com/Sital999/Letter-Recommendation">
                 Recommendation Letter
               </a>
             </p>
-            <ul className=" text-md text-gray-300 mb-4 pt-4 px-20">
+            <ul className=" text-md text-gray-300 mb-4 pt-4 pl-20">
               <li>Web application for generating Recommendation Letter.</li>
               <li>Developed using Django, Javascript, Bootstrap.</li>
             </ul>
           </li>
           <li>
             <p>
-              <a href="https://github.com/Sital999/Cpp-Programming-WW3t">WW2</a>
+              <a href="https://github.com/Sital999/Cpp-Programming-WW3t">Social Media Clone</a>
             </p>
             <ul className=" text-md text-gray-300 mb-4 pt-4 px-20">
-              <li>Multi Player PC game. </li>
-              <li>Developed using C++ and SFML.</li>
+              <li>Simple Social Media clone that has basic fucntionality of adding post , comment ,like etc. </li>
+              <li>Developed using Node.js, React, Redux , TailwindCSS</li>
             </ul>
           </li>
 
@@ -117,9 +133,9 @@ const Resume = () => {
             <p>
               <a href="https://github.com/Sital999/ioe_app">IOE Mobile App</a>
             </p>
-            <ul className=" text-md text-gray-300 mb-4 pt-4 px-20">
-              <li>User friendly mobile app for IOE students and teachers. </li>
-              <li>Developed using Flutter and Django RestFramework.</li>
+            <ul className=" text-md text-gray-300 mb-4 pt-4 pl-20">
+              <li>User friendly mobile app for IOE students and teachers.
+                Developed using Flutter and Django RestFramework.</li>
             </ul>
           </li>
         </ul>
