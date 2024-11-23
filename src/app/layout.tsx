@@ -1,9 +1,11 @@
+import { cn } from "@lib/utils";
+import { Provider } from "jotai";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../assets/css/globals.css";
-import { cn } from "../lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
+``;
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -17,13 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={cn(
-          "max-h-screen w-screen overflow-x-hidden bg-stone-200",
-          inter.className
-        )}
-      >
-        <div className="h-screen w-screen">{children}</div>
+      <body className={cn(" overflow-x-hidden bg-stone-200", inter.className)}>
+        <Provider>
+          <div>{children}</div>
+        </Provider>
       </body>
     </html>
   );

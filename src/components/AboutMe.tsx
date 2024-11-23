@@ -6,37 +6,41 @@ import Image from "next/image";
 
 const cardVariants: Variants = {
   offscreen: {
-    x: 200,
+    x: -50,
   },
   onscreen: {
     x: 0,
     transition: {
-      type: "tween",
-      duration: 0.8,
-      ease: "easeIn",
+      duration: 0.5,
+      ease: "easeInOut",
     },
   },
 };
 
 const AboutMe = () => {
   return (
-    <div className="grid grid-cols-2 pt-12">
+    <div id="about-me" className="grid grid-cols-2 pt-12 gap-20">
       <div></div>
       <div className="flex flex-row items-center gap-1">
         <h1 className="text-2xl font-semibold">About Me</h1>
         <h1 className="text-4xl lg:text-4xl sm:text-6xl">👦🏻</h1>
       </div>
-      <div className="col-start-1 flex items-center">
+      <motion.div
+        viewport={{ once: true }}
+        initial={{ x: 100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5, ease: "linear" }}
+        className="col-start-1 flex items-center"
+      >
         <Image
           src={Dev}
-          height={450}
-          width={450}
           alt="dev_photo"
-          className="rounded-md"
+          className="rounded-md w-full h-[300px]"
         />
-      </div>
+      </motion.div>
       <div className="flex flex-col justify-start pt-2">
         <motion.p
+          viewport={{ once: true }}
           initial="offscreen"
           whileInView="onscreen"
           variants={cardVariants}

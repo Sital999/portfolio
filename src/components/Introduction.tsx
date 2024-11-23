@@ -1,14 +1,15 @@
 "use client";
 
-import Profile from "@app/assets/images/profile.png";
+import Profile from "@assets/images/profile.png";
+import { socialMedia } from "@constants/socialMedia";
+import { cn } from "@lib/utils";
+import { themeAtom } from "@store/theme";
 import { motion } from "framer-motion";
-import { Mail } from "lucide-react";
+import { useAtom } from "jotai";
 import Image from "next/image";
-import { BsDiscord } from "react-icons/bs";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Introduction = () => {
+  const [theme] = useAtom(themeAtom);
   return (
     <motion.div
       initial={{ y: 50, opacity: 0 }}
@@ -17,11 +18,16 @@ const Introduction = () => {
       className="flex flex-row justify-between py-10"
     >
       <div className="basis-2/3 gap-5 flex flex-col items-start justify-center">
-        <div className="text-black text-[80px] font-extrabold ">
+        <div className="text-[80px] font-extrabold ">
           <h1>Hey, There</h1>
           <h1>I Am Sital.</h1>
         </div>
-        <h1 className="text-lg font-normal text-gray-600">
+        <h1
+          className={cn(
+            "text-lg font-normal ",
+            theme.darkMode ? "theme-gray-300" : "text-gray-600"
+          )}
+        >
           Welcome to my tranquil place! I'm Sital Nagarkoti, A passionate
           Software Developer. Currently on a mission to transform awesome ideas
           into seamless digital design.
@@ -33,25 +39,21 @@ const Introduction = () => {
   );
 };
 
-const socialMedia = [
-  { icon: FaSquareXTwitter, link: "https://twitter.com/NagarkotiShital" },
-  { icon: FaGithub, link: "https://github.com/Sital999" },
-  { icon: Mail, link: "mailto:sitalnagarkoti123@gmail.com" },
-  {
-    icon: FaLinkedin,
-    link: "https://www.linkedin.com/in/sital-nagarkoti-b62409241/",
-  },
-  { icon: BsDiscord, link: "https://discordapp.com/users/514428982935158784" },
-];
-
 const SocialMedia = () => {
+  const [theme] = useAtom(themeAtom);
+
   return (
     <div className="flex flex-row gap-4">
       {socialMedia.map((sm, index) => {
         const IconComponent = sm.icon;
         return (
           <a href={sm.link} target="_blank" key={index}>
-            <IconComponent className="h-6 w-6 text-stone-600" />
+            <IconComponent
+              className={cn(
+                "h-6 w-6 ",
+                theme.darkMode ? "text-stone-300" : "text-stone-600"
+              )}
+            />
           </a>
         );
       })}
