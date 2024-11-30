@@ -33,10 +33,10 @@ const Header = () => {
       }}
       className={cn("flex flex-row justify-between ")}
     >
-      <h1 className={cn("font-semibold text-xl", italicFont.className)}>
+      <h1 className={cn("font-semibold md:text-xl", italicFont.className)}>
         Developed By: SITAL
       </h1>
-      <div className="flex gap-4">
+      <div className="hidden md:flex gap-4 ">
         {navbarBtns.map((btn) => {
           return <NavBarButtons btn={btn} key={btn.title} />;
         })}

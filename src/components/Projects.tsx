@@ -7,13 +7,15 @@ import Card from "./Card";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col gap-10 items-center  py-20">
+    <div className="flex flex-col gap-4 md:gap-7 lg:gap-10 items-center py-4 md:py-14 lg:py-20">
       <div className="flex flex-col gap-10">
-        <div className="flex flex-row gap-4">
-          <h1 className="text-4xl font-semibold">Projects And Contributions</h1>
-          <h1 className="text-5xl lg:text-5xl sm:text-6xl">🧑🏻‍💻</h1>
+        <div className="flex flex-row gap-4 justify-center md:justify-start">
+          <h1 className="text-xl md:text-3xl lg:text-4xl font-semibold">
+            Projects And Contributions
+          </h1>
+          <h1 className="text-3xl lmd:text-5xl lg:text-6xl">🧑🏻‍💻</h1>
         </div>
-        <div className="flex flex-col gap-16 h-full">
+        <div className="flex flex-col gap-10 md:gap-12 lg:gap-16 h-full">
           {ProjectLsit.map((project, index) => {
             return <Card key={index} project={project} index={index} />;
           })}

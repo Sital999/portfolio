@@ -15,16 +15,16 @@ const Introduction = () => {
       initial={{ y: 50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeInOut" }}
-      className="flex flex-row justify-between py-10"
+      className="flex flex-col-reverse lg:flex-row justify-between py-3 md:py-5 lg:py-10 gap-2 md:gap-0"
     >
-      <div className="basis-2/3 gap-5 flex flex-col items-start justify-center">
-        <div className="text-[80px] font-extrabold ">
+      <div className="basis-2/3 gap-5 flex flex-col items-center md:items-start justify-center">
+        <div className="flex flex-row gap-2 md:block text-3xl md:text-6xl lg:text-[80px] font-extrabold ">
           <h1>Hey, There</h1>
           <h1>I Am Sital.</h1>
         </div>
         <h1
           className={cn(
-            "text-lg font-normal ",
+            "text-sm md:text-lg font-normal ",
             theme.darkMode ? "theme-gray-300" : "text-gray-600"
           )}
         >

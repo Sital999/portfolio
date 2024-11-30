@@ -1,7 +1,11 @@
 "use client";
 
 import Dev from "@assets/images/dev.jpg";
+import { useIsMobile } from "@hooks/useIsMobile";
+import { cn } from "@lib/utils";
+import { themeAtom } from "@store/theme";
 import { motion, Variants } from "framer-motion";
+import { useAtom } from "jotai";
 import Image from "next/image";
 
 const cardVariants: Variants = {
@@ -18,11 +22,16 @@ const cardVariants: Variants = {
 };
 
 const AboutMe = () => {
+  const isMobile = useIsMobile();
+  const [theme] = useAtom(themeAtom);
   return (
-    <div id="about-me" className="grid grid-cols-2 pt-12 gap-20">
-      <div></div>
-      <div className="flex flex-row items-center gap-1">
-        <h1 className="text-2xl font-semibold">About Me</h1>
+    <div
+      id="about-me"
+      className="grid grid-cols-1 lg:grid-cols-2 pt-4 md:pt-8 lg:pt-12 gap-2 md:gap-12 lg:gap-20"
+    >
+      {!isMobile && <div></div>}
+      <div className="flex flex-row items-center justify-center md:justify-start gap-1">
+        <h1 className="text-xl md:text-2xl font-semibold">About Me</h1>
         <h1 className="text-4xl lg:text-4xl sm:text-6xl">👦🏻</h1>
       </div>
       <motion.div
@@ -44,6 +53,10 @@ const AboutMe = () => {
           initial="offscreen"
           whileInView="onscreen"
           variants={cardVariants}
+          className={cn(
+            "text-sm md:text-base font-normal",
+            theme.darkMode ? "theme-gray-300" : "text-gray-600"
+          )}
         >
           I'm a passionate software engineer with a passion for creating
           innovative solutions specializing in building web applications,

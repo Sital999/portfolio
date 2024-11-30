@@ -3,7 +3,7 @@
 import { cn } from "@lib/utils";
 import { themeAtom } from "@store/theme";
 import { useAtom } from "jotai";
-import React, { useEffect } from "react";
+import React from "react";
 
 const HomePageWrapper = ({
   children,
@@ -16,7 +16,7 @@ const HomePageWrapper = ({
   return (
     <div
       className={cn(
-        "px-72 py-10 h-full w-full flex flex-col gap-10",
+        "px-4 sm:px-10 md:px-30 lg:px-72 py-4 md:py-10 h-full w-full flex flex-col gap-6 lg:gap-10",
         className,
         theme.darkMode ? "bg-stone-800 text-white" : ""
       )}

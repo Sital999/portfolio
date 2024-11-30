@@ -6,7 +6,10 @@ import { useAtom } from "jotai";
 const Footer = () => {
   const [theme] = useAtom(themeAtom);
   return (
-    <div id="contact" className="flex gap-4 justify-center items-center pb-20">
+    <div
+      id="contact"
+      className="flex gap-4 justify-center items-center pb-4 lg:pb-14"
+    >
       {socialMedia.map((sm, index) => {
         const IconComponent = sm.icon;
         return (
