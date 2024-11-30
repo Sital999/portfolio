@@ -58,7 +58,7 @@ const AboutMe = () => {
             theme.darkMode ? "theme-gray-300" : "text-gray-600"
           )}
         >
-          I'm a passionate software engineer with a passion for creating
+          I&apos;m a passionate software engineer with a passion for creating
           innovative solutions specializing in building web applications,
           decentralized applications (dApps), testing them using various testing
           tools.I focus on delivering scalable and innovative solutions. My

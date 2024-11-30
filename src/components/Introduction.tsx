@@ -28,7 +28,7 @@ const Introduction = () => {
             theme.darkMode ? "theme-gray-300" : "text-gray-600"
           )}
         >
-          Welcome to my tranquil place! I'm Sital Nagarkoti, A passionate
+          Welcome to my tranquil place! I&apos;m Sital Nagarkoti, A passionate
           Software Developer. Currently on a mission to transform awesome ideas
           into seamless digital design.
         </h1>

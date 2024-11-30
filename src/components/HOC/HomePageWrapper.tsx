@@ -12,7 +12,7 @@ const HomePageWrapper = ({
   children: React.ReactNode;
   className?: string;
 }) => {
-  const [theme, setTheme] = useAtom(themeAtom);
+  const [theme] = useAtom(themeAtom);
   return (
     <div
       className={cn(

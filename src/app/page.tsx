@@ -12,7 +12,7 @@ import { useAtom } from "jotai";
 import { useEffect } from "react";
 
 export default function Home() {
-  const [_, setTheme] = useAtom(themeAtom);
+  const [, setTheme] = useAtom(themeAtom);
   useEffect(() => {
     const darkMode = localStorage.getItem("darkMode") === "true";
     if (darkMode) {
