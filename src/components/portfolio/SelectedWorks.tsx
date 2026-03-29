@@ -316,8 +316,8 @@ export function SelectedWorks({ data }: SelectedWorksProps) {
 
                     <div className="overflow-y-auto px-4 py-4 sm:px-6 sm:py-5">
                       <div className="grid gap-5 lg:grid-cols-[1.35fr_0.65fr]">
-                        <div className="relative min-h-[250px] overflow-hidden rounded-md border border-[var(--border-muted)] bg-[var(--surface-2)] sm:min-h-[360px]">
-                          <Image alt={activeWork.image.alt} className="object-cover" fill sizes="(max-width: 1024px) 100vw, 64vw" src={activeWork.image.url} />
+                        <div className="relative h-56 w-full overflow-hidden rounded-md border border-[var(--border-muted)] bg-[var(--surface-2)] sm:h-72 lg:h-[360px]">
+                          <Image alt={activeWork.image.alt} className="object-contain object-center p-2" fill sizes="(max-width: 1024px) 100vw, 64vw" src={activeWork.image.url} />
                         </div>
 
                         <div className="space-y-4">
