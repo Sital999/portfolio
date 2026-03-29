@@ -1,0 +1,347 @@
+{
+  "header": {
+    "brand": "SITAL_NAGARKOTI",
+    "navItems": [
+      { "id": "about", "label": "About", "href": "#about" },
+      { "id": "skills", "label": "Skills", "href": "#skills" },
+      { "id": "projects", "label": "Projects", "href": "#projects" },
+      { "id": "live-feed", "label": "Tech Feed", "href": "#live-feed" },
+      { "id": "experience", "label": "Experience", "href": "#experience" },
+      { "id": "profiles", "label": "Profiles", "href": "#profiles" },
+      { "id": "contact", "label": "Contact", "href": "#contact" }
+    ],
+    "themeButtonLabel": "*",
+    "connectButton": {
+      "label": "REACH OUT",
+      "href": "#contact"
+    }
+  },
+  "hero": {
+    "sectionId": "about",
+    "eyebrow": "Hey There | Software Developer | Web3 Builder",
+    "headingLines": ["I Am Sital.", "Passionate Software", "Developer"],
+    "highlightWord": "Passionate",
+    "description": "Welcome to my tranquil place. I am Sital Nagarkoti, a software developer focused on building web applications, decentralized applications, and reliable testing workflows that turn ideas into meaningful products.",
+    "actions": [
+      {
+        "id": "explore",
+        "label": "VIEW PROJECTS",
+        "href": "#projects",
+        "variant": "primary"
+      },
+      {
+        "id": "stack",
+        "label": "ABOUT ME",
+        "href": "#skills",
+        "variant": "secondary"
+      }
+    ],
+    "photo": {
+      "url": "https://sitalnagarkoti.com.np/_next/static/media/profile.c4cc6ef0.png",
+      "alt": "Portrait of Sital Nagarkoti"
+    },
+    "panel": {
+      "title": "Personal Snapshot",
+      "facts": [
+        { "id": "focus", "label": "Focus", "value": "Web + Web3" },
+        { "id": "stack", "label": "Core Stack", "value": "Py / TS / C++" },
+        { "id": "mode", "label": "Work Mode", "value": "Ship + Iterate" }
+      ],
+      "focusTags": ["Web Apps", "dApps", "Testing", "Security"]
+    },
+    "quotesOfDay": [
+      "Build small, ship often, and let feedback shape the next version.",
+      "Clean architecture is less about complexity and more about clarity.",
+      "Trust grows when systems are secure, transparent, and reliable.",
+      "Consistency beats intensity when learning and building products.",
+      "The best code is the one your future self can read in one pass.",
+      "Strong teams are built on ownership, respect, and clear communication."
+    ]
+  },
+  "expertise": {
+    "sectionId": "skills",
+    "panelEyebrow": "About Me",
+    "panelBody": "I bring a strong work ethic and a collaborative mindset, thriving in teams that value diverse ideas and practical innovation.",
+    "titleEyebrow": "Projects And Contributions",
+    "title": "Building web apps, dApps, and robust testing-driven systems.",
+    "columns": [
+      "I specialize in software engineering for innovative products, with hands-on experience delivering scalable web applications and decentralized platforms.",
+      "My core technical stack includes Python, JavaScript, TypeScript, and C++. I continuously refine my craft by staying aligned with modern tools, trends, and engineering practices."
+    ]
+  },
+  "stack": {
+    "sectionId": "projects",
+    "languageCardTitle": "Languages",
+    "frameworkCardTitle": "Frameworks",
+    "languages": [
+      { "id": "python", "label": "Python", "status": "Core" },
+      { "id": "javascript", "label": "JavaScript", "status": "Core" },
+      { "id": "typescript", "label": "TypeScript", "status": "Core" },
+      { "id": "cpp", "label": "C++", "status": "Core" }
+    ],
+    "frameworks": [
+      { "id": "next", "label": "Next.js", "status": "*" },
+      { "id": "fastapi", "label": "FastAPI", "status": "*" },
+      { "id": "spring", "label": "Spring Boot", "status": "*" },
+      { "id": "docker", "label": "Docker", "status": "*" }
+    ],
+    "capabilityCards": [
+      {
+        "id": "ql-performance",
+        "title": "Database Experience",
+        "items": [
+          {
+            "id": "mongodb",
+            "title": "MongoDB",
+            "description": "Worked with document-based modeling, aggregation pipelines, and practical indexing for web applications."
+          },
+          {
+            "id": "postgresql",
+            "title": "PostgreSQL",
+            "description": "Used relational schemas, joins, and query optimization patterns for reliable backend systems."
+          },
+          {
+            "id": "neo4j-cypher",
+            "title": "Neo4j + Cypher",
+            "description": "Hands-on experience with graph data modeling and basic Cypher queries for relationship-heavy workflows."
+          }
+        ]
+      },
+      {
+        "id": "security-layer",
+        "title": "Blockchain Experience",
+        "items": [
+          {
+            "id": "solana-game",
+            "title": "Solana Game Development",
+            "description": "Built Freedom Fighter, a web3 card game experience around ownership-driven gameplay and decentralized interaction."
+          },
+          {
+            "id": "multi-chain",
+            "title": "Cardano + Solana Exposure",
+            "description": "Worked across blockchain projects including governance-focused Cardano tools and Solana-based game concepts."
+          }
+        ]
+      }
+    ]
+  },
+  "works": {
+    "sectionId": "experience",
+    "sectionTitle": "Selected Works",
+    "sectionLabel": "Scroll to Explore",
+    "defaultWorkId": "better-collected",
+    "items": [
+      {
+        "id": "better-collected",
+        "badges": ["Web Security", "Privacy First"],
+        "categories": ["Web", "Security"],
+        "title": "BetterCollected",
+        "description": "A privacy-focused form engine designed to meet strict GDPR and CCPA requirements through zero-knowledge data design and encrypted transit layers.",
+        "bulletPoints": [
+          "Custom branded and privacy-first forms",
+          "GDPR and CCPA compliance workflows",
+          "Import from Google Forms and Typeform"
+        ],
+        "tags": "Github   Live",
+        "image": {
+          "url": "/images/projects/bettercollected.png",
+          "alt": "Screenshot of BetterCollected project"
+        },
+        "detail": {
+          "challenge": "Organizations needed secure online forms while staying compliant with strict privacy regulations.",
+          "solution": "Built privacy-first form workflows with consent-aware data handling, custom branding, and migration tools from existing form providers.",
+          "impact": "Enabled trust-focused data collection with stronger compliance posture and smoother onboarding for teams moving from legacy form tools.",
+          "links": [
+            { "label": "Github", "href": "https://github.com/bettercollected/bettercollected" },
+            { "label": "Live", "href": "https://bettercollected.com/" }
+          ]
+        }
+      },
+      {
+        "id": "autonomous-agent-testing",
+        "badges": ["Agent Systems", "Governance"],
+        "categories": ["Web3", "Testing"],
+        "title": "Autonomous Agent Testing",
+        "description": "Framework for verifying agent-based governance on Cardano with simulated CIP-1694 voting scenarios.",
+        "bulletPoints": [
+          "CIP-1694 governance simulation",
+          "Agent status and governance logs",
+          "Transaction analytics dashboard"
+        ],
+        "tags": "Github   Live",
+        "image": {
+          "url": "/images/projects/aat.png",
+          "alt": "Screenshot of Autonomous Agent Testing dashboard"
+        },
+        "detail": {
+          "challenge": "Testing decentralized governance behavior required visibility into autonomous agent actions and voting lifecycle events.",
+          "solution": "Implemented a dashboard-oriented testing platform for CIP-1694 scenarios with agent status tracking, governance logs, and transaction analytics.",
+          "impact": "Improved confidence in governance-related workflows through repeatable scenario testing and clearer operational observability.",
+          "links": [
+            { "label": "Github", "href": "https://github.com/cardanoapi/autonomous-agents" },
+            { "label": "Live", "href": "https://agents.cardanoapi.io/" }
+          ]
+        }
+      },
+      {
+        "id": "split-contract",
+        "badges": ["Plutus", "Smart Contracts"],
+        "categories": ["Web3", "Security"],
+        "title": "Split Contract",
+        "description": "Multi-stakeholder agreement protocol allowing transparent distribution across Oracle-validated addresses.",
+        "bulletPoints": [
+          "Automated percentage-based payouts",
+          "Transparent allocation among stakeholders",
+          "Built on Cardano smart contract primitives"
+        ],
+        "tags": "Live",
+        "image": {
+          "url": "/images/projects/split_contract.png",
+          "alt": "Screenshot of Split Contract application"
+        },
+        "detail": {
+          "challenge": "Multi-party payout agreements needed transparent, deterministic distribution without manual settlement overhead.",
+          "solution": "Built split-contract logic to automate proportional allocation across stakeholders with clear rule definitions.",
+          "impact": "Reduced ambiguity in payout execution and improved reliability of recurring distribution workflows.",
+          "links": [
+            { "label": "Live", "href": "https://paymentsplitter.cardanoapi.io/" }
+          ]
+        }
+      },
+      {
+        "id": "freedom-fighter",
+        "badges": ["Solana", "Web3 Game"],
+        "categories": ["Web3", "Game"],
+        "title": "Freedom Fighter",
+        "description": "A blockchain-powered card battle game where players assemble fighters, use strategic abilities, and compete in tactical matches.",
+        "bulletPoints": [
+          "Web3 card game flow with strategy-focused battles",
+          "NFT-style ownership experience for in-game characters",
+          "Tournament-ready concept with competitive gameplay direction"
+        ],
+        "tags": "Live",
+        "image": {
+          "url": "/images/projects/freedom-fighter.png",
+          "alt": "Freedom Fighter game landing preview"
+        },
+        "detail": {
+          "challenge": "Create an engaging game experience that combines strategic battles with real player ownership in a web3 context.",
+          "solution": "Built Freedom Fighter as a decentralized card-battle concept where squads, abilities, and progression are designed around blockchain-backed game assets.",
+          "impact": "Demonstrated practical Solana-aligned web3 game development capability and strengthened product thinking across gameplay and blockchain utility.",
+          "links": [
+            { "label": "Live", "href": "https://freedom-fighter.sireto.dev/" }
+          ]
+        }
+      }
+    ]
+  },
+  "timeline": {
+    "eyebrow": "Growth Journey",
+    "entries": [
+      {
+        "id": "role-1",
+        "dateRange": "Present",
+        "role": "Software Developer",
+        "company": "Independent Projects",
+        "description": "Designing and delivering privacy-focused platforms, Cardano governance tooling, and multi-party smart contract utilities with a strong product mindset."
+      },
+      {
+        "id": "role-2",
+        "dateRange": "Earlier",
+        "role": "Learning & Collaboration",
+        "company": "Open Source + Team Projects",
+        "description": "Collaborated across teams, experimented with testing frameworks and emerging technologies, and strengthened implementation quality through continuous learning."
+      }
+    ]
+  },
+  "highlights": {
+    "sectionId": "highlights",
+    "eyebrow": "Placeholder Section",
+    "title": "More Things You Can Showcase",
+    "items": [
+      {
+        "id": "highlight-1",
+        "title": "Certifications",
+        "description": "Add your professional certificates, verification links, and learning milestones here.",
+        "meta": "Example: Cloud, Security, Blockchain"
+      },
+      {
+        "id": "highlight-2",
+        "title": "Community Work",
+        "description": "Highlight hackathons, mentoring, speaking sessions, or open-source contributions.",
+        "meta": "Example: Talks, Workshops, OSS"
+      },
+      {
+        "id": "highlight-3",
+        "title": "Current Focus",
+        "description": "Use this card to communicate what you are actively building or researching right now.",
+        "meta": "Example: AI agents, Web3 testing, DX"
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionId": "testimonials",
+    "eyebrow": "Placeholder Section",
+    "title": "What People Say",
+    "items": [
+      {
+        "id": "testimonial-1",
+        "quote": "Sital consistently ships reliable features and keeps communication clear from planning to deployment.",
+        "name": "Alex Team Lead",
+        "role": "Product Engineering",
+        "avatarLabel": "AT",
+        "rating": 5
+      },
+      {
+        "id": "testimonial-2",
+        "quote": "Strong problem-solving mindset with a practical approach to architecture and testing decisions.",
+        "name": "Maya Collaborator",
+        "role": "Full-Stack Developer",
+        "avatarLabel": "MC",
+        "rating": 5
+      },
+      {
+        "id": "testimonial-3",
+        "quote": "Great ownership, calm execution, and consistent quality in both web and Web3 project work.",
+        "name": "Jordan Contributor",
+        "role": "Blockchain Builder",
+        "avatarLabel": "JC",
+        "rating": 4
+      }
+    ]
+  },
+  "profiles": {
+    "sectionId": "profiles",
+    "sectionTitle": "Where I Build And Collaborate",
+    "sectionDescription": "I share work, contribute to open projects, and connect with the developer community across these channels.",
+    "links": [
+      { "id": "github", "label": "GitHub", "href": "https://github.com/Sital999" },
+      { "id": "linkedin", "label": "LinkedIn", "href": "https://www.linkedin.com/in/sital-nagarkoti-b62409241/" },
+      { "id": "twitter", "label": "Twitter", "href": "https://twitter.com/NagarkotiShital" },
+      { "id": "discord", "label": "Discord", "href": "https://discordapp.com/users/514428982935158784" },
+      { "id": "website", "label": "Live Site", "href": "https://sitalnagarkoti.com.np/" }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Let Us Connect",
+    "title": "Ready to build your next product together?",
+    "description": "I am available for software development collaborations, product engineering roles, and Web3-focused project work.",
+    "email": {
+      "label": "SITALNAGARKOTI123@GMAIL.COM",
+      "href": "mailto:sitalnagarkoti123@gmail.com"
+    },
+    "action": {
+      "label": "OPEN LINKEDIN",
+      "href": "https://www.linkedin.com/in/sital-nagarkoti-b62409241/"
+    }
+  },
+  "footer": {
+    "brand": "Developed By: SITAL",
+    "links": [
+      { "id": "github", "label": "Github", "href": "https://github.com/Sital999" },
+      { "id": "linkedin", "label": "Linkedin", "href": "https://www.linkedin.com/in/sital-nagarkoti-b62409241/" },
+      { "id": "twitter", "label": "Twitter", "href": "https://twitter.com/NagarkotiShital" },
+      { "id": "discord", "label": "Discord", "href": "https://discordapp.com/users/514428982935158784" }
+    ]
+  }
+}

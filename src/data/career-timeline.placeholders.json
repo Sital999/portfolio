@@ -1,0 +1,46 @@
+{
+  "sectionId": "career-map",
+  "eyebrow": "Interactive Career Timeline",
+  "title": "Journey Through Roles, Projects, and Growth",
+  "entries": [
+    {
+      "id": "career-now",
+      "dateRange": "Present",
+      "role": "Software Developer",
+      "organization": "Product And Web3 Projects",
+      "milestone": "Currently building and shipping production-focused applications across web and decentralized domains.",
+      "highlights": [
+        "Worked on BetterCollected as a privacy-focused product",
+        "Contributed to Autonomous Agent project for governance-related workflows",
+        "Continuing to improve architecture, testing, and delivery quality"
+      ],
+      "technologies": ["Next.js", "TypeScript", "FastAPI", "Cardano", "Testing"]
+    },
+    {
+      "id": "career-collab",
+      "dateRange": "Internship",
+      "role": "Software Engineering Intern",
+      "organization": "Sireto Technology",
+      "milestone": "Gained hands-on product and blockchain experience in a team environment.",
+      "highlights": [
+        "Worked on the Split Contract project during internship",
+        "Learned production collaboration and feature delivery workflows",
+        "Improved practical understanding of smart-contract use cases"
+      ],
+      "technologies": ["Cardano", "Smart Contracts", "TypeScript", "Team Workflow"]
+    },
+    {
+      "id": "career-foundation",
+      "dateRange": "Final Year",
+      "role": "Major Project",
+      "organization": "Academic Final Year Project",
+      "milestone": "Built an education app as a major final-year project to cover core product workflows and strengthen full-stack fundamentals.",
+      "highlights": [
+        "Implemented routing and role-based navigation flows",
+        "Built syllabus management modules for academic content",
+        "Added result publishing workflows for student outcomes"
+      ],
+      "technologies": ["Django", "React", "Routing", "Education App"]
+    }
+  ]
+}
